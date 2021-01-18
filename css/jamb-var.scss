@@ -1,0 +1,36 @@
+$black: #000;
+$white: #ffffff;
+$blue: #0000FF;
+$grey1: #727272;
+$grey2: #EFEFEF;
+
+$font1: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+$font2: 'Roboto Mono', monospace;
+$font3: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+
+@mixin top-menu-view {
+	@media all and (max-width: 700px) {
+		@content;
+	}
+}
+@mixin footer-view {
+  @media all and (max-width: 700px) {
+    @content;
+  }
+}
+@mixin post-view-one {
+	@media all and (min-width: 410px) {
+		@content;
+	}
+}
+@mixin post-view-two {
+	@media all and (max-width: 409px) {
+		@content;
+	}
+}
+@mixin post-view-three {
+	@media all and (max-width: 360px) {
+		@content;
+	}
+}

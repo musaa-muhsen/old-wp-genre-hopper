@@ -1,0 +1,238 @@
+/* ================================ 
+posts height
+=========================== */
+@media all and (min-width: 410px) {
+  .post-default .content-container {
+    min-height: 310px; } }
+@media all and (max-width: 409px) {
+  .post-default .content-container {
+    height: auto;
+    padding: 20px 0; } }
+@media all and (max-width: 360px) {
+  .post-default .content-container {
+    padding: 10px 0; } }
+
+@media all and (min-width: 410px) {
+  .post-video .top-container {
+    height: auto; } }
+@media all and (max-width: 409px) {
+  .post-video .top-container {
+    height: auto; } }
+@media all and (min-width: 410px) {
+  .post-video .content-container {
+    min-height: 300px;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    padding: 10px 0 10px 0; } }
+@media all and (max-width: 409px) {
+  .post-video .content-container {
+    min-height: 250px;
+    padding: 10px 0 5px 0; } }
+@media all and (max-width: 360px) {
+  .post-video .content-container {
+    min-height: 215px;
+    padding: 10px 0 5px 0; } }
+
+@media all and (min-width: 410px) {
+  .post-image .top-container {
+    min-height: 310px; } }
+@media all and (max-width: 409px) {
+  .post-image .top-container {
+    height: auto; } }
+.post-image .content-container {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box; }
+  @media all and (min-width: 410px) {
+    .post-image .content-container {
+      min-height: 280px;
+      padding: 20px 0 20px 0; } }
+  @media all and (max-width: 409px) {
+    .post-image .content-container {
+      height: auto;
+      padding: 10px 0 10px 0; } }
+  @media all and (max-width: 360px) {
+    .post-image .content-container {
+      height: auto;
+      padding: 10px 0 10px 0; } }
+
+@media all and (min-width: 410px) {
+  .post-audio .top-container,
+  .post-aside .top-container {
+    height: auto; } }
+@media all and (max-width: 409px) {
+  .post-audio .top-container,
+  .post-aside .top-container {
+    height: auto; } }
+@media all and (min-width: 410px) {
+  .post-audio .content-container,
+  .post-aside .content-container {
+    min-height: 320px; } }
+@media all and (max-width: 409px) {
+  .post-audio .content-container,
+  .post-aside .content-container {
+    padding: 20px 0 10px 0;
+    min-height: 170px; } }
+@media all and (max-width: 360px) {
+  .post-audio .content-container,
+  .post-aside .content-container {
+    min-height: 150px;
+    padding: 10px 0 5px 0; } }
+
+/* ======================== 
+whole-post-design 
+=========================== */
+.content-post {
+  color: #ffffff;
+  background: #000;
+  place-self: start center;
+  height: auto;
+  border: solid 1px #727272;
+  width: 400px;
+  	/*=================================
+  	         bottom part
+  =================================*/ }
+  @media all and (max-width: 409px) {
+    .content-post {
+      width: 350px; } }
+  @media all and (max-width: 360px) {
+    .content-post {
+      width: 300px; } }
+  .content-post .top-container {
+    width: 100%;
+    display: grid; }
+    .content-post .top-container .content-container {
+      place-self: center center;
+      display: grid;
+      justify-items: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      width: 380px; }
+      @media all and (max-width: 409px) {
+        .content-post .top-container .content-container {
+          width: 330px; } }
+      @media all and (max-width: 360px) {
+        .content-post .top-container .content-container {
+          width: 280px; } }
+  .content-post .bottom-container {
+    height: auto;
+    margin: 0 auto;
+    width: 380px; }
+    @media all and (max-width: 409px) {
+      .content-post .bottom-container {
+        width: 340px;
+        margin: 10px auto 0 auto; } }
+    @media all and (max-width: 360px) {
+      .content-post .bottom-container {
+        width: 290px;
+        margin: 10px auto 0 auto; } }
+
+/* ================= TIME STYLEING ===================*/
+.time-container p {
+  font-size: 11px; }
+
+/* ============== Title styling ===================*/
+.title-container {
+  margin: 8px auto;
+  font-weight: 400;
+  height: auto; }
+
+/* ===================image  STYLING ============ */
+.post-image .top-container .content-container .wp-block-image,
+.post-default .top-container .content-container .wp-block-image {
+  margin: 0 !important;
+  padding: 0 !important; }
+  .post-image .top-container .content-container .wp-block-image img,
+  .post-default .top-container .content-container .wp-block-image img {
+    width: 100%;
+    height: auto !important; }
+
+/* =================== mixcloud/soundcloud styling ============ */
+.post-audio iframe,
+.post-aside iframe,
+.post-default iframe {
+  width: 380px !important;
+  height: 180px !important; }
+  @media all and (max-width: 409px) {
+    .post-audio iframe,
+    .post-aside iframe,
+    .post-default iframe {
+      width: 330px !important;
+      height: 170px !important; } }
+  @media all and (max-width: 360px) {
+    .post-audio iframe,
+    .post-aside iframe,
+    .post-default iframe {
+      width: 270px !important;
+      height: 150px !important; } }
+
+/* ===================VIDEO STYLING ============ */
+.is-type-video {
+  width: 380px !important; }
+  @media all and (max-width: 409px) {
+    .is-type-video {
+      width: 330px !important; } }
+  @media all and (max-width: 360px) {
+    .is-type-video {
+      width: 280px !important; } }
+
+.lyte-wrapper {
+  margin: 0 !important; }
+
+.wp-block-embed {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important; }
+
+iframe {
+  border-width: 0 !important;
+  border-style: none !important;
+  border-color: none !important;
+  -o-border-image: none !important;
+     border-image: none !important; }
+
+.tags-wrapper {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 5px; }
+
+.tags-container {
+  margin: auto;
+  width: 100%;
+  height: auto; }
+
+.ul-tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap; }
+
+.ul-tags a {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  -webkit-transition: background 0.2s linear;
+  transition: background 0.2s linear;
+  border: 1px solid #727272;
+  padding: 4px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 11px; }
+
+.ul-tags a:hover {
+  background: #EFEFEF;
+  color: #000; }
+
+.ul-tags li {
+  margin: 6px 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 auto;
+          flex: 1 auto;
+  text-align: left; }
+
+/*# sourceMappingURL=jamb-posts.css.map */

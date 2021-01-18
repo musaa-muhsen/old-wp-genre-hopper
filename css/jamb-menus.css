@@ -1,0 +1,266 @@
+.page-title {
+  width: 100%;
+  height: auto;
+  margin: 0 auto; }
+  .page-title h1 {
+    text-transform: capitalize;
+    margin-left: 30px;
+    letter-spacing: 0px;
+    font: 400 1rem "Roboto Mono", monospace; }
+    @media all and (max-width: 700px) {
+      .page-title h1 {
+        text-align: center;
+        margin-left: 0; } }
+
+/* ===============================
+main menu ========================= */
+.empty-space {
+  height: 4rem;
+  width: 100%; }
+  @media all and (max-width: 700px) {
+    .empty-space {
+      height: 70px; } }
+
+@media all and (max-width: 700px) {
+  .empty-block-1 {
+    display: none; } }
+
+.main-header-wrapper {
+  background: #000;
+  z-index: 30000;
+  top: 0;
+  left: 0;
+  position: fixed;
+  border-bottom: 1px #ffffff solid;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: 3rem; }
+  @media all and (max-width: 700px) {
+    .main-header-wrapper {
+      grid-template-columns: 1fr;
+      grid-template-rows: 2.5rem 2rem; } }
+
+.logo-container {
+  margin-left: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .logo-container .menu-bottom-menu-container a {
+    color: #ffffff;
+    padding: 3px; }
+  @media all and (max-width: 700px) {
+    .logo-container {
+      border-bottom: 1px #ffffff solid;
+      margin-left: 0; } }
+  .logo-container .menu-bottom-menu-container {
+    margin: auto; }
+
+.nav-style {
+  margin-right: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 3rem; }
+  @media all and (max-width: 700px) {
+    .nav-style {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin-right: 0;
+      width: 100%;
+      height: 2rem; } }
+  @media all and (max-width: 700px) {
+    .nav-style li {
+      height: 2rem;
+      -webkit-box-flex: 1;
+          -ms-flex: 1 50%;
+              flex: 1 50%; } }
+  @media all and (max-width: 700px) {
+    .nav-style li:nth-child(1) {
+      border-right: 1px solid #ffffff; } }
+  .nav-style a {
+    display: block;
+    color: #ffffff;
+    background: #000;
+    border: 1px solid #727272;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    padding: 3px; }
+    @media all and (max-width: 700px) {
+      .nav-style a {
+        text-align: center;
+        line-height: 2rem;
+        height: 2rem;
+        width: 100%;
+        border: none;
+        padding: 0; } }
+    .nav-style a:hover {
+      border: 1px solid #727272;
+      background: #EFEFEF;
+      color: #000; }
+      @media all and (max-width: 700px) {
+        .nav-style a:hover {
+          border: none; } }
+
+.footer-main {
+  margin-top: 50px;
+  width: 100%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  @media all and (max-width: 700px) {
+    .footer-main {
+      display: block;
+      height: 1.2rem;
+      position: relative; } }
+  .footer-main p {
+    margin: auto;
+    font: 400 16px "Roboto Mono", monospace; }
+    @media all and (max-width: 700px) {
+      .footer-main p {
+        position: absolute;
+        top: 50%;
+        left: 48%;
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        width: 250px; } }
+  .footer-main a {
+    display: block;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s; }
+    @media all and (max-width: 700px) {
+      .footer-main a {
+        width: 100%;
+        text-align: center; } }
+  .footer-main a:hover {
+    background: #efefef;
+    color: #000; }
+
+/*===============================
+pagination
+=============================*/
+.pagination-btn-right {
+  bottom: 20px;
+  right: 30px; }
+  .pagination-btn-right a {
+    border-right: solid #ffffff 1px;
+    border-left: solid #ffffff 1px;
+    border-top: solid #ffffff 1px;
+    border-bottom: solid #ffffff 1px; }
+  @media all and (max-width: 700px) {
+    .pagination-btn-right {
+      right: 0;
+      bottom: 35px; }
+      .pagination-btn-right a {
+        border-right: solid #000 1px; } }
+
+.pagination-btn-left {
+  bottom: 20px;
+  left: 30px; }
+  .pagination-btn-left a {
+    border-right: solid #ffffff 1px;
+    border-left: solid #ffffff 1px;
+    border-top: solid #ffffff 1px;
+    border-bottom: solid #ffffff 1px; }
+  @media all and (max-width: 700px) {
+    .pagination-btn-left {
+      left: 0;
+      bottom: 35px; }
+      .pagination-btn-left a {
+        border-left: solid #000 1px; } }
+
+.pagination-btn {
+  width: 130px;
+  z-index: 3000;
+  position: fixed;
+  text-align: center;
+  font: 400 16px "Roboto Mono", monospace; }
+  @media all and (max-width: 700px) {
+    .pagination-btn {
+      width: 50vw; } }
+  .pagination-btn a {
+    line-height: 32px;
+    display: block;
+    width: 100%;
+    height: 32px;
+    color: #ffffff;
+    background: #000;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s; }
+    @media all and (max-width: 700px) {
+      .pagination-btn a {
+        width: 100%;
+        height: 42px;
+        line-height: 42px; } }
+    .pagination-btn a:hover {
+      color: #000;
+      background: #EFEFEF; }
+
+/*.pagination-wrapper {
+    	
+	width: 100%;
+	height: 70px;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	display: flex;
+	.pagination-container {
+		width: 95%;
+margin:auto;
+	display: grid;
+	grid-template-columns: 145px 1fr 145px;
+.pagination {
+   
+   .pagination-btn {
+   	text-align: center;
+   	font: 400 24px $font1;
+   	
+   	a {
+   		line-height: 2.5rem;
+   display: block;
+ height: 2.5rem;
+color: $black;
+background: $white;
+   	}
+  
+   }
+}
+.left-pagination {
+   
+}
+.right-pagination {
+
+}}
+}*/
+/*.main-header-wrapper {
+border-bottom: 0.5px $white solid;
+	width: 100%;
+
+   height: 3rem;
+}
+
+.main-header-container {
+
+	width: 95%;
+height: auto;
+	
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+}
+*/
+
+/*# sourceMappingURL=jamb-menus.css.map */

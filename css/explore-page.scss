@@ -1,0 +1,94 @@
+@import "jamb-var.scss";
+// whole container
+.exlpore-container {
+	margin: 30px auto 0 auto;
+	display: flex;
+	flex-flow: row nowrap;
+	@media all and (max-width: 600px) {
+		flex-flow: column wrap;
+	}
+	width: 100%;
+	height: auto;
+	color: $white;
+
+	h2 {
+		font: 400 20px $font2;
+		padding-bottom: 20px;
+	}
+	// container left
+	.archive-container {
+		@media all and (max-width: 600px) {
+			flex: 1 100%;
+			margin-bottom: 30px;
+		}
+		text-align: left;
+		flex: 1 50%;
+		display: grid;
+		.widget {
+			place-self: start center;
+			//margin: 30px 0 30px 0;
+			// ul {
+			// 	//width: 180px;
+			// }
+		}
+	}
+	// container right
+	.tags-container {
+		text-align: left;
+		flex: 1 50%;
+		@media all and (max-width: 600px) {
+			flex: 1 100%;
+		}
+		display: grid;
+		.widget {
+			place-self: start center;
+			//margin: 30px 0 30px 0;
+		}
+	}
+}
+// #tag_cloud-3 {
+// 	//width: 300px;
+// }
+// archive container (left)
+#archives-2 {
+	ul {
+		display: flex;
+		flex-direction: column;
+		a:hover {
+			background: $white;
+			color: $black;
+		}
+
+		a {
+			font-size: 14px;
+			transition: all 0.3s;
+			display: block;
+			width: 180px;
+			border: solid 1px $grey1;
+			padding: 4px;
+			margin: 0 8px 8px 0;
+			color: $white;
+		}
+	}
+}
+
+// tag container (right)
+.widget_tag_cloud .tagcloud {
+	display: flex;
+	flex-direction: column;
+}
+.widget_tag_cloud .tagcloud a {
+	transition: all 0.3s;
+	border: solid 1px $grey1;
+	background-color: $black;
+	color: $white;
+	font-size: 14px !important;
+	margin: 0 8px 8px 0;
+	padding: 4px;
+	text-decoration: none;
+}
+
+.widget_tag_cloud .tagcloud a:hover {
+	background-color: $grey2;
+	color: $black;
+}
